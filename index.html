@@ -1,14 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Portfolio-Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    </link>
+    <style>
+        .bodycolor {
+            background-color: white;
+        }
+
+        .navcolor {
+            background-color: #161A30;
+        }
+        .bodycolor .card .card-header .nav-tabs .nav-item .nav-link.active {
+            color: #31304D;
+        }
+        .bodycolor .card .card-header .nav-tabs .nav-item .nav-link{
+            color: white;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="bodycolor">
+    <div class="card">
+        <div class="card-header p-0">
+            <ul class="nav nav-tabs card-header-tabs navcolor" id="mytab" role="tablist">
+                <li class="nav-item" role="introduction">
+                    <button 
+                    class="nav-link active" 
+                    id="intro" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#intro-tab-pane"
+                    type="button" 
+                    role="tab" 
+                    aria-controls="intro-tab-pane" 
+                    aria-selected="true">
+                        Introduction
+                    </button>
+                </li>
+                <li class="nav-item" role="aboutMe">
+                    <button 
+                    class="nav-link" 
+                    id="about" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#about-tab-pane"
+                    type="button" 
+                    role="tab" 
+                    aria-controls="about-tab-pane" 
+                    aria-selected="false">
+                        About Me
+                    </button>
+                </li>
+                <li class="nav-item" role="skills">
+                    <button 
+                    class="nav-link" 
+                    id="myskills" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#skills-tab-pane"
+                    type="button" 
+                    role="tab" 
+                    aria-controls="skills-tab-pane" 
+                    aria-selected="false">
+                        Skills
+                    </button>
+                </li>
+                <li class="nav-item" role="projects">
+                    <button 
+                    class="nav-link" 
+                    id="myprojects" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#projects-tab-pane"
+                    type="button" 
+                    role="tab" 
+                    aria-controls="projects-tab-pane" 
+                    aria-selected="false">
+                        Projects
+                    </button>
+                </li>
+                <li class="nav-item" role="experience">
+                    <button 
+                    class="nav-link" 
+                    id="myexperience" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#experience-tab-pane"
+                    type="button" 
+                    role="tab" 
+                    aria-controls="experience-tab-pane" 
+                    aria-selected="false">
+                        Experience
+                    </button>
+                </li>
+                <li class="nav-item" role="certi">
+                    <button 
+                    class="nav-link" 
+                    id="mycerti" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#certi-tab-pane"
+                    type="button" 
+                    role="tab" 
+                    aria-controls="certi-tab-pane" 
+                    aria-selected="false">
+                        Certifications and Awards
+                    </button>
+                </li>
+                <li class="nav-item" role="hobby">
+                    <button 
+                    class="nav-link" 
+                    id="myhobby" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#hobby-tab-pane"
+                    type="button" 
+                    role="tab" 
+                    aria-controls="hobby-tab-pane" 
+                    aria-selected="false">
+                        Hobbies and Interests
+                    </button>
+                </li>
+                <li class="nav-item" role="other">
+                    <button 
+                    class="nav-link" 
+                    id="myother" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#other-tab-pane"
+                    type="button" 
+                    role="tab" 
+                    aria-controls="other-tab-pane" 
+                    aria-selected="false">
+                        Other Works
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <div class="tab-content" id="myTabContent">
+                <div 
+                class="tab-pane fade show active" 
+                id="intro-tab-pane"
+                role="tabpanel"
+                aria-labelledby="intro"
+                tabindex="0">
+                    <h1>Introduction</h1>
+                    <p>Hello intro page!!!</p>
+                </div>
+                <div 
+                class="tab-pane fade" 
+                id="about-tab-pane"
+                role="tabpanel"
+                aria-labelledby="about"
+                tabindex="0">
+                    <h1>About</h1>
+                    <p>Hello about page!!!</p>
+                </div>
+                <div 
+                class="tab-pane fade" 
+                id="skills-tab-pane"
+                role="tabpanel"
+                aria-labelledby="myskills"
+                tabindex="0">
+                    <h1>Skills</h1>
+                    <p>Hello skills page!!!</p>
+                </div>
+                <div 
+                class="tab-pane fade" 
+                id="projects-tab-pane"
+                role="tabpanel"
+                aria-labelledby="myprojects"
+                tabindex="0">
+                    <h1>Projects</h1>
+                    <p>Hello project page!!!</p>
+                </div>
+                <div 
+                class="tab-pane fade" 
+                id="experience-tab-pane"
+                role="tabpanel"
+                aria-labelledby="myexperience"
+                tabindex="0">
+                    <h1>Experience</h1>
+                    <p>Hello experience page!!!</p>
+                </div>
+                <div 
+                class="tab-pane fade" 
+                id="certi-tab-pane"
+                role="tabpanel"
+                aria-labelledby="mycerti"
+                tabindex="0">
+                    <h1>Certifications and Awards</h1>
+                    <p>Hello Certifications and Awards page!!!</p>
+                </div>
+                <div 
+                class="tab-pane fade" 
+                id="hobby-tab-pane"
+                role="tabpanel"
+                aria-labelledby="myhobby"
+                tabindex="0">
+                    <h1>Hobbies and Interests</h1>
+                    <p>Hello Hobbies and Interests page!!!</p>
+                </div>
+                <div 
+                class="tab-pane fade" 
+                id="other-tab-pane"
+                role="tabpanel"
+                aria-labelledby="myother"
+                tabindex="0">
+                    <h1>Other Works</h1>
+                    <p>Hello Other Works page!!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 </body>
+
 </html>
