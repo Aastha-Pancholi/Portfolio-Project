@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Project new</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    </link>
+    <style>
+        .bodycolor {
+            background-color: #3C5B6F;
+        }
+
+        .navcolor {
+            background-color: #161A30;
+        }
+
+        .bodycolor .card .card-header .navbar .container-fluid .nav-item .nav-link.active {
+            color: #31304D;
+        }
+
+        .bodycolor .card .card-header .navbar .container-fluid .nav-item .nav-link {
+            color: white;
+        }
+
+        .button1 {
+            background-color: #31304D;
+            color: white;
+            border: 2px solid #31304D;
+        }
+
+        .button1:hover {
+            background-color: white;
+            color: #31304D;
+            border: 2px solid #31304D;
+        }
+
+        .bodycolor .card .card-header .navbar .container-fluid .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+        .bodycolor .card .card-header .navbar .container-fluid .navbar-toggler {
+            border-color: white;
+        }
+    </style>
+</head>
+
+<body class="bodycolor">
+    <div class="card m-5 border-0">
+        <div class="card-header p-0">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid navcolor">
+                    <a href="#" class="navbar-brand">
+                        <img style="width:150px;" src="image.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse m-2" id="navbarSupportedContent">
+                        <ul class="navbar-nav card-header-tabs navcolor m-0" id="mytab" role="tablist">
+                            <li class="nav-item" role="introduction">
+                                <button class="nav-link active" id="intro" data-bs-toggle="tab"
+                                    data-bs-target="#intro-tab-pane" type="button" role="tab"
+                                    aria-controls="intro-tab-pane" aria-selected="true">
+                                    Introduction
+                                </button>
+                            </li>
+                            <li class="nav-item" role="aboutMe">
+                                <button class="nav-link" id="about" data-bs-toggle="tab"
+                                    data-bs-target="#about-tab-pane" type="button" role="tab"
+                                    aria-controls="about-tab-pane" aria-selected="false">
+                                    About Me
+                                </button>
+                            </li>
+                            <li class="nav-item" role="skills">
+                                <button class="nav-link" id="myskills" data-bs-toggle="tab"
+                                    data-bs-target="#skills-tab-pane" type="button" role="tab"
+                                    aria-controls="skills-tab-pane" aria-selected="false">
+                                    Skills
+                                </button>
+                            </li>
+                            <li class="nav-item" role="projects">
+                                <button class="nav-link" id="myprojects" data-bs-toggle="tab"
+                                    data-bs-target="#projects-tab-pane" type="button" role="tab"
+                                    aria-controls="projects-tab-pane" aria-selected="false">
+                                    Projects
+                                </button>
+                            </li>
+                            <li class="nav-item" role="experience">
+                                <button class="nav-link" id="myexperience" data-bs-toggle="tab"
+                                    data-bs-target="#experience-tab-pane" type="button" role="tab"
+                                    aria-controls="experience-tab-pane" aria-selected="false">
+                                    Experience
+                                </button>
+                            </li>
+                            <li class="nav-item" role="edu">
+                                <button class="nav-link" id="myedu" data-bs-toggle="tab" data-bs-target="#edu-tab-pane"
+                                    type="button" role="tab" aria-controls="edu-tab-pane" aria-selected="false">
+                                    Education
+                                </button>
+                            </li>
+                            <li class="nav-item" role="certi">
+                                <button class="nav-link" id="mycerti" data-bs-toggle="tab"
+                                    data-bs-target="#certi-tab-pane" type="button" role="tab"
+                                    aria-controls="certi-tab-pane" aria-selected="false">
+                                    Certifications and Awards
+                                </button>
+                            </li>
+                            <li class="nav-item" role="hobby">
+                                <button class="nav-link" id="myhobby" data-bs-toggle="tab"
+                                    data-bs-target="#hobby-tab-pane" type="button" role="tab"
+                                    aria-controls="hobby-tab-pane" aria-selected="false">
+                                    Hobbies and Interests
+                                </button>
+                            </li>
+                            <li class="nav-item" role="other">
+                                <button class="nav-link" id="myother" data-bs-toggle="tab"
+                                    data-bs-target="#other-tab-pane" type="button" role="tab"
+                                    aria-controls="other-tab-pane" aria-selected="false">
+                                    Other Works
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="card-body">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="intro-tab-pane" role="tabpanel" aria-labelledby="intro"
+                    tabindex="0">
+                    <div class="container mt-5 mb-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 mt-5 mb-5 order-2 g-0">
+                                <div class="px-5">
+                                    <img style="width: 400px" class="img-fluid rounded-circle"
+                                        src="https://cdn.pixabay.com/photo/2015/11/20/16/17/background-image-1053439_1280.jpg">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-5 mb-5 order-1">
+                                <div class="p-5 h-100 mx-5">
+                                    <h3 style="color:#161A30">I'm</h3>
+                                    <h1 style="color:#161A30">Aastha Pancholi</h1>
+                                    <h2 style="color:#161A30">Front End Developer</h2>
+                                    <hr style="color:#161A30">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12 p-0 mb-3">
+                                                <p style="color:#161A30">Email ID <i
+                                                        class="bi bi-envelope-fill"></i></i> : abc@gmail.com</p>
+                                            </div>
+                                            <div class="col-md-12 p-0">
+                                                <a class="button1 p-2 text-decoration-none"
+                                                    href="https://www.linkedin.com">LinkedIn Profile <i
+                                                        class="bi bi-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="about-tab-pane" role="tabpanel" aria-labelledby="about" tabindex="0">
+                    <div class="container mt-5 mb-5">
+                        <div class="row justify-content-center mt-5 mb-5">
+                            <div class="col-md-6 mt-5 mb-5">
+                                <div class="px-5 mt-5 mb-5">
+                                    <h1 style="color:#31304D; font-size: 100px;" class="mt-5 mb-5">About.</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-5 mb-5">
+                                <div class="px-5 mt-5 mb-5">
+                                    <p class="mt-5 mb-5 "
+                                        style="font-size: 20px; line-height: 40px; word-spacing: 10px;">Hello! I'm
+                                        Aastha Pancholi, a passionate and dedicated Front End developer with a flair for
+                                        crafting visually stunning and highly functional web experiences.
+                                        With a strong background in HTML, CSS and Bootstrap, I specialize in creating
+                                        responsive and user-friendly interfaces that not only meet but exceed client
+                                        expectations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="skills-tab-pane" role="tabpanel" aria-labelledby="myskills" tabindex="0">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5">
+                                    <h1 style="color:#31304D; font-size: 50px;" class="text-center">Technical Skills
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card border-0">
+                                    <img class="card-img-top p-5"
+                                        src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png">
+                                    <div class="card-body">
+                                        <h3 class="card title border-0 text-center" style="color:#31304D;">HTML 5</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card border-0">
+                                    <img class="card-img-top p-5"
+                                        src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png">
+                                    <div class="card-body">
+                                        <h3 class="card title border-0 text-center" style="color:#31304D;">CSS</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card border-0">
+                                    <img class="card-img-top p-5"
+                                        src="https://cdn.iconscout.com/icon/free/png-256/free-bootstrap-6-1175203.png">
+                                    <div class="card-body">
+                                        <h3 class="card title border-0 text-center" style="color:#31304D;">Bootstrap
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card border-0">
+                                    <img class="card-img-top p-5"
+                                        src="https://cdn.iconscout.com/icon/free/png-256/free-java-60-1174953.png?f=webp">
+                                    <div class="card-body">
+                                        <h3 class="card title border-0 text-center" style="color:#31304D;">Java</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card border-0">
+                                    <img class="card-img-top p-5"
+                                        src="https://cdn.iconscout.com/icon/free/png-256/free-python-2-226051.png?f=webp">
+                                    <div class="card-body">
+                                        <h3 class="card title border-0 text-center" style="color:#31304D;">Python</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card border-0">
+                                    <img class="card-img-top p-5"
+                                        src="https://cdn.iconscout.com/icon/free/png-256/free-php-99-1175127.png?f=webp">
+                                    <div class="card-body">
+                                        <h3 class="card title border-0 text-center" style="color:#31304D;">PHP</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card border-0">
+                                    <img class="card-img-top p-5"
+                                        src="https://cdn.iconscout.com/icon/free/png-256/free-mysql-3521596-2945040.png?f=webp">
+                                    <div class="card-body">
+                                        <h3 class="card title border-0 text-center" style="color:#31304D;">MySQL</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5">
+                                    <h1 style="color:#31304D; font-size: 50px;" class="text-center">Soft Skills</h1>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-2"></i>Hardworking</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-2"></i>Trustworthy</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-2"></i>Fast Learner</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-2"></i>Creative</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="projects-tab-pane" role="tabpanel" aria-labelledby="myprojects"
+                    tabindex="0">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5">
+                                    <h1 style="color:#31304D; font-size: 50px;" class="text-center">Projects</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-5">
+                                        <h2 style="color:#31304D;">Event Agile</h2>
+                                        <p style="color:#31304D;"><span class="small">(Start year - End Year)</span></p>
+                                        <p style="color:#31304D;">Designed a Web Application for Event Organization.
+                                            Developed using React, Node.js and MongoDB. Defined and conducted design
+                                            processes at all stages including implementation along with my partners.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-5">
+                                        <h2 style="color:#31304D;">Laptop Price Prediction </h2>
+                                        <p style="color:#31304D;"><span class="small">(Start year - End Year)</span></p>
+                                        <p style="color:#31304D;">Developed a web application for Laptop price
+                                            prediction. Developed using the libraries of Python. Performed Exploratory
+                                            data analysis and implementation along with my partner.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="experience-tab-pane" role="tabpanel" aria-labelledby="myexperience"
+                    tabindex="0">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5">
+                                    <h1 style="color:#31304D; font-size: 50px;" class="text-center">Experience</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-5">
+                                        <h2 style="color:#31304D;">ADS Vision</h2>
+                                        <p style="color:#31304D;"><span class="small">(Start year - End Year)</span></p>
+                                        <p style="color:#31304D;">Currently working with ADS Vision as a Front End
+                                            Developer under an internship program.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="edu-tab-pane" role="tabpanel" aria-labelledby="myedu" tabindex="0">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5">
+                                    <h1 style="color:#31304D; font-size: 50px;" class="text-center">Education</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-5">
+                                        <h2 style="color:#31304D;">Bachelor</h2>
+                                        <h3 style="color:#31304D;">University</h3>
+                                        <p style="color:#31304D;"><span class="small">(Start year - End Year)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-5">
+                                        <h2 style="color:#31304D;">Master</h2>
+                                        <h3 style="color:#31304D;">University</h3>
+                                        <p style="color:#31304D;"><span class="small">(Start year - End Year)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="certi-tab-pane" role="tabpanel" aria-labelledby="mycerti" tabindex="0">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5">
+                                    <h1 style="color:#31304D; font-size: 50px;" class="text-center">Certifications and
+                                        Awards</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-5">
+                                        <h2 style="color:#31304D;">Certificate of Scholar</h2>
+                                        <h4 style="color:#31304D;">University</h4>
+                                        <p style="color:#31304D;"><span class="small">Programme</span></p>
+                                        <p style="color:#31304D;">For achieving a SGPA of 8.81/10 in the first semester
+                                            of the program.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-5">
+                                        <h2 style="color:#31304D;">ProjectKon</h2>
+                                        <h4 style="color:#31304D;">University</h4>
+                                        <p style="color:#31304D;"><span class="small">Programme</span></p>
+                                        <p style="color:#31304D;">For participation in the ProjectKon organized by the
+                                            Association of Students in collaboration with the Student's Chapter.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="hobby-tab-pane" role="tabpanel" aria-labelledby="myhobby" tabindex="0">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5">
+                                    <h1 style="color:#31304D; font-size: 50px;" class="text-center">Hobbies and
+                                        Interests</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-3"></i>Painting</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-3"></i>Drawing</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-3"></i>Pottery</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-3"></i>Reading</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-3"></i>Bedminton</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-3">
+                                        <h4 style="color:#31304D;" class="text-center"><i
+                                                class="bi bi-suit-diamond-fill me-3"></i>Listening Music</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="other-tab-pane" role="tabpanel" aria-labelledby="myother" tabindex="0">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5">
+                                    <h1 style="color:#31304D; font-size: 50px;" class="text-center">Other Works</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="px-5 mb-5 rounded" style="background-color: #B6BBC4;">
+                                    <div class="p-5">
+                                        <h2 style="color:#31304D;">Cross-cultural Communication Challenges</h2>
+                                        <h3 style="color:#31304D;">Blog</h3>
+                                        <p style="color:#31304D;"><span class="small">(1<sup>st</sup>April 2024)</span>
+                                        </p>
+                                        <hr>
+                                        <p style="color:#31304D;" class="mb-4">Describes the communication challenges a
+                                            person faces when communicating with another person having a different
+                                            cultural background.</p>
+                                        <a class="button1 p-2 text-decoration-none mb-3"
+                                            href="https://cross-culturalcommunicationchallenges.blogspot.com/2024/04/cross-cultural-communication-challenges.html">View
+                                            Blog</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+</body>
+
+</html>
