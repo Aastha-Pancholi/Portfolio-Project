@@ -1,0 +1,69 @@
+.bodycolor {
+    background-color: white;
+}
+
+.button1 {
+    background-color: #31304D;
+    color: white;
+    border: 2px solid #31304D;
+}
+
+.button1:hover {
+    background-color: white;
+    color: #31304D;
+    border: 2px solid #31304D;
+}
+
+.bodycolor .card .card-header .navbar .container-fluid .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bodycolor .card .card-header .navbar .container-fluid .navbar-toggler {
+    border-color: white;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+#sidebar {
+    width: 100px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #161A30;
+}
+
+#sidebar.expand{
+    width: 260px;
+    min-width: 260px;
+}
+
+.sidebar-link {
+    border: none;
+    padding: 10px;
+    background-color: #161A30;
+    color: white;
+}
+
+#toggle-btn{
+    background-color: transparent;
+    border: 0;
+    font-size: 30px;
+    color: white;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) .sidebar-link span{
+    display: none;
+}
